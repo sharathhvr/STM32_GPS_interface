@@ -24,7 +24,7 @@ src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/hvrsh/OneDrive/Desktop/FreeRTOS Workspace/STM32_GPS_Interface/StdPeriph_Driver/inc" -I"C:/Users/hvrsh/OneDrive/Desktop/FreeRTOS Workspace/STM32_GPS_Interface/inc" -I"C:/Users/hvrsh/OneDrive/Desktop/FreeRTOS Workspace/STM32_GPS_Interface/CMSIS/device" -I"C:/Users/hvrsh/OneDrive/Desktop/FreeRTOS Workspace/STM32_GPS_Interface/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/StdPeriph_Driver/inc" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/src" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/startup" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/Debug" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/inc" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/CMSIS/device" -I"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

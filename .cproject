@@ -37,7 +37,9 @@
 								</option>
 								<option id="gnu.c.compiler.option.include.paths.1179473861" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/StdPeriph_Driver/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/LCD16x2/LCD_Includes}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
@@ -77,6 +79,7 @@
 							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1258046645.1519443217" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1258046645"/>
 							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.1693465186.1920106973" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.1693465186"/>
 							<option id="fr.ac6.managedbuild.option.gnu.cross.board.260799364.1914852489" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.260799364"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
 							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1544499401" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.2026763144">
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1774239383" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1451254187" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>

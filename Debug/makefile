@@ -31,10 +31,10 @@ endif
 all: STM32_GPS_Interface.elf
 
 # Tool invocations
-STM32_GPS_Interface.elf: $(OBJS) $(USER_OBJS) C:\Users\hvrsh\OneDrive\Desktop\FreeRTOS\ Workspace\STM32_GPS_Interface/LinkerScript.ld
+STM32_GPS_Interface.elf: $(OBJS) $(USER_OBJS) C:\Users\hvrsh\Documents\MY_FILES\STM32_Projects\GIT_PROJECTS\STM32_GPS_interface/LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -u _printf_float -T"C:/Users/hvrsh/OneDrive/Desktop/FreeRTOS Workspace/STM32_GPS_Interface/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "STM32_GPS_Interface.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -u _printf_float -T"C:/Users/hvrsh/Documents/MY_FILES/STM32_Projects/GIT_PROJECTS/STM32_GPS_interface/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "STM32_GPS_Interface.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

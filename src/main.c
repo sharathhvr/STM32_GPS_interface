@@ -15,8 +15,6 @@
 #include <stdlib.h>
 #include "stm32f4xx.h"
 
-#include "../../STM32_LCD_Libraries/LCD16x2/LCD_Includes/LCD.h"
-
 
 /*
  * Macros
